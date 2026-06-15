@@ -1,0 +1,75 @@
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+/* SLIDE */
+
+.carousel-slide {
+  background: #ffffff;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+}
+
+/* IMAGE — HERO STYLE */
+
+.carousel-image-wrapper {
+  width: 100%;
+  background: #f1f5f9;
+}
+
+.carousel-image-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* CONTENT AREA */
+
+.carousel-content {
+  text-align: center;
+  padding: 30px 20px 35px;
+}
+
+.carousel-content h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.carousel-content p {
+  color: #6b7280;
+  font-size: 16px;
+  margin-bottom: 22px;
+}
+
+/* BUTTON */
+
+.carousel-content button {
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  border: none;
+  padding: 12px 34px;
+  color: white;
+  font-size: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.carousel-content button:hover {
+  transform: translateY(-2px);
+}
+
+/* SWIPER SPACING */
+
+.swiper {
+  width: 100%;
+  padding-bottom: 60px;
+}
+body {
+  background: linear-gradient(135deg, #eef2f7, #f8fafc);
+}

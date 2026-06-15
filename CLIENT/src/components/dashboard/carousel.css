@@ -1,0 +1,175 @@
+.swiper {
+
+  width: 100%;
+
+  padding-bottom: 55px;
+}
+
+/* MAIN CARD */
+
+.modern-carousel-card {
+display: flex;
+
+justify-content: center;
+
+align-items: center;
+  position: relative;
+
+  width: 100%;
+
+  height: 540px;
+
+  border-radius: 34px;
+
+  overflow: hidden;
+
+  background: #0f172a;
+
+  border:
+    1px solid rgba(255,255,255,0.08);
+
+  box-shadow:
+    0 25px 60px rgba(0,0,0,0.35);
+}
+
+/* IMAGE */
+
+.carousel-main-image {
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: contain;
+
+  object-position: center;
+
+  padding: 0;
+
+  background:
+    linear-gradient(
+      135deg,
+      #020617,
+      #0f172a,
+      #1e293b
+    );
+}
+
+/* BUTTON */
+
+.carousel-btn {
+
+  position: absolute;
+
+  bottom: 36px;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  padding: 15px 34px;
+
+  border-radius: 14px;
+
+  border:
+    1px solid rgba(255,255,255,0.18);
+
+  background:
+    rgba(255,255,255,0.08);
+
+  backdrop-filter: blur(12px);
+
+  color: rgb(0, 41, 53);
+
+  font-size: 16px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.carousel-btn:hover {
+
+  transform:
+    translateX(-50%)
+    translateY(-3px);
+
+  background:
+    rgba(255,255,255,0.16);
+
+  border:
+    1px solid rgba(255,255,255,0.28);
+}
+
+/* PAGINATION */
+
+.swiper-pagination {
+
+  bottom: 0 !important;
+}
+
+.swiper-pagination-bullet {
+
+  width: 10px !important;
+
+  height: 10px !important;
+
+  background: #64748b !important;
+
+  opacity: 1 !important;
+
+  transition: 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+
+  width: 30px !important;
+
+  border-radius: 999px !important;
+
+  background: #3b82f6 !important;
+}
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+
+  .modern-carousel-card {
+
+  position: relative;
+
+  width: 92%;
+
+  margin: auto;
+
+  height: 540px;
+
+  border-radius: 34px;
+
+  overflow: hidden;
+
+  background: #0f172a;
+
+  border:
+    1px solid rgba(255,255,255,0.08);
+
+  box-shadow:
+    0 25px 60px rgba(0,0,0,0.35);
+}
+  .carousel-btn {
+
+    width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .modern-carousel-card {
+
+    height: 340px;
+
+    border-radius: 24px;
+  }
+}
