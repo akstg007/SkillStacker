@@ -107,25 +107,41 @@ const NextActions = () => {
         t => updated.includes(t)
       );
 
-    if (allDone) {
+   if (allDone) {
 
-      current.currentDay += 1;
+  current.currentDay += 1;
 
-if (
-  current.currentDay % 7 === 0
-) {
+  current.currentWeek =
+    Math.ceil(
+      current.currentDay / 7
+    );
 
-  current.currentWeek += 1;
+  current.currentMonth =
+    Math.ceil(
+      current.currentDay / 30
+    );
+
+  current.completedTasks = [];
+
+  saveActionProgress(
+    current
+  );
+
+  setCompletedTasks([]);
+
+  const generated =
+    generateActions(
+      roadmaps[skill]
+    );
+
+  setActions(
+    generated
+  );
+
+  setProgress(
+    { ...current }
+  );
 }
-
-      current.completedTasks = [];
-
-      saveActionProgress(
-        current
-      );
-
-      window.location.reload();
-    }
   };
 
   if (!actions) {

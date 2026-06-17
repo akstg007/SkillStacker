@@ -1,27 +1,29 @@
 export const getActionProgress = () => {
 
-const saved = JSON.parse(
-localStorage.getItem(
-"skillstacker_action_progress"
-)
-);
+  const saved = JSON.parse(
+    localStorage.getItem(
+      "skillstacker_action_progress"
+    )
+  );
 
-return (
-saved || {
-currentPhase: 0,
-currentDay: 1,
-currentWeek: 1,
-completedTasks: []
-}
-);
+  return (
+    saved || {
+      currentPhase: 0,
+      currentDay: 1,
+      currentWeek: 1,
+      currentMonth: 1,
+      startDate: Date.now(),
+      completedTasks: []
+    }
+  );
 };
 
 export const saveActionProgress = (
-data
+  data
 ) => {
 
-localStorage.setItem(
-"skillstacker_action_progress",
-JSON.stringify(data)
-);
+  localStorage.setItem(
+    "skillstacker_action_progress",
+    JSON.stringify(data)
+  );
 };
